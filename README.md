@@ -11,6 +11,7 @@ Windows users can just drag the app.nw file onto the nw file.
 
 Key players:
 
-app.html 		-> The basic html layout for the game
-silvertree.js 	-> All the data and functions
-package.json 	-> Node-Webkit configuration
+app.html 		-> The basic html layout for the game   
+silvertree.js 	-> All the data and functions   
+package.json 	-> Node-Webkit configuration   
+app.nw          -> Executable package
