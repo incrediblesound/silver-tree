@@ -21,7 +21,11 @@ function createJumble() {
 		passage = passage.split('.');
 		passage = noEmpty(passage);
 		var select = Math.floor(Math.random() * passage.length);
-		results.push(passage[select] + '. ');
+    if(results.indexOf(passage[select]) === -1) {
+      results.push(passage[select] + '. ');
+    } else {
+      i -= 1;
+    }
   }
 
 	var box = document.getElementById('bottom-box');
