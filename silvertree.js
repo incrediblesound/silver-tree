@@ -15,12 +15,15 @@ function createJumble() {
   if(eraser) { eraser.parentNode.removeChild(eraser); }
 
 	var results = [];
-	forEach(data.passages, function(passage) {
+	for(var i = 0; i<5 ; i++) {
+    var choose = Math.floor(Math.random()*6);
+    var passage = data.passages[choose];
 		passage = passage.split('.');
 		passage = noEmpty(passage);
 		var select = Math.floor(Math.random() * passage.length);
 		results.push(passage[select] + '. ');
-	})
+  }
+
 	var box = document.getElementById('bottom-box');
 	var jumble = document.createElement('div');
   jumble.setAttribute('id', 'jumble-box');
