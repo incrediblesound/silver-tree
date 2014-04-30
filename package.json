@@ -1,0 +1,9 @@
+{
+	"name": "silver-tree",
+	"main": "app.html",
+	"window": {
+		"toolbar": false,
+		"position": "center",
+		"min_height": 650
+	}
+}
